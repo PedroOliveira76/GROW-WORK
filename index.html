@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>AAPCDAT/Home</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>AAPCDAT</h1>
+            </div>
+
+            <div class="menu-desktop">
+                <a href="#" onclick="Home()">
+                     Home
+                 </a>
+
+                <a href="#sobre" onclick="sobre()">
+                    Sobre
+                </a>
+
+                <a href="#" onclick="contato()">
+                    Contato
+                </a>
+                <a class="btn-menu" onclick="clicar()">
+                    Get It Now!
+                </a>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+    <script src="https://kit.fontawesome.com/2e63e24100.js" crossorigin="anonymous"></script>
+    <section class="main">
+        <div class="center">
+            <div class="main__cta">
+                <h2>Associação de ajuda aos PCDS no ambiente de trabalho</h2>
+                <p>Adquiria nosso serviço!!</p>
+                <button id="clicar" onclick="clicar2()">Get It Now!</button>
+            </div>
+            <!--main__cta-->
+
+            <div class="diferenciais">
+                <div class="diferencial-single">
+                    <i class="fa-brands fa-accessible-icon"></i>
+                    <h2>Aplicativo de ajuda</h2>
+                    <p>Temos um aplicativo que ajuda as empresas a ingressar PCDS no seu ambiente de trabalho
+                    </p>
+                </div>
+                <!--diferenciais-single-->
+
+                <div class="diferencial-single">
+                    <i class="fa-brands fa-accessible-icon"></i>
+                    <h2>PCDS</h2>
+                    <p>A sigla PCDS é o termo mais indicado para se referir a esta condição. Não se deve usar a palavra deficiente ou portadora de deficiência .
+                    </p>
+                </div>
+                <!--diferenciais-single-->
+
+                <div class="diferencial-single">
+                    <i class="fa-brands fa-accessible-icon"></i>
+                    <h2>Empresas apoiadoras</h2>
+                    <p>
+                        SERASA, DROGASIL, CITI, NATURA, 13 COMENTARIOS
+                        <br> (Apenas fictício, os apoiadores não são reais)
+                        </br>
+
+                    </p>
+                </div>
+                <!--diferenciais-single-->
+
+            </div>
+            <!--diferenciais-->
+
+        </div>
+        <!--center-->
+
+    </section>
+    <!--main-->
+
+    <section class="sobre">
+        <div class="center">
+            <div class="chamada-sobre" id="sobre">
+                <h2>Sobre Grow Work</h2>
+                <p>Projeto AAPCDAT</p>
+            </div>
+            <!--chamada-sobre-->
+            <div class="conteudo-sobre">
+                <p>
+                    Somos uma startUp que visa melhorar o desempenho de PCDS correspondente a sua empresa, dando todo o apoio com o nosso aplicativo desenvolvido para essa situação, onde você pode adquiri-lo atraves desse site pela PlayStore ou AppleStore.
+
+                </p>
+
+            </div>
+            <!--conteudo-sobre-->
+        </div>
+        <!--center-->
+    </section>
+    <!--sobre-->
+    <script>
+        function clicar2() {
+            location.href = 'https://drive.google.com/drive/folders/1DUr5Hyq-L3imEitXseA-92LRXCNYQmHV?usp=sharing'
+
+        }
+
+        function contato() {
+            location.href = 'http://127.0.0.1:5500/index(contato).html'
+        }
+
+        function Home() {
+            location.href = 'http://127.0.0.1:5500/index.html'
+        }
+
+        function clicar() {
+            location.href = 'https://drive.google.com/drive/folders/1DUr5Hyq-L3imEitXseA-92LRXCNYQmHV?usp=sharing'
+        }
+    </script>
+    <script>
+        $('.menu-desktop a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+
+            $('html, body').animate({
+                scrollTop: targetOffset - 100
+            }, 500);
+        });
+    </script>
+
+
+
+</body>
+
+
+
+
+</html>
